@@ -1,0 +1,129 @@
+/*Faça um programa que seja capaz de armazenar informações
+sobre livros de uma biblioteca.
+Seu programa deve ter um TAD para representar o livro,
+contendo título, autor e número de páginas.
+Além disso, seu TAD deve ter duas operações: ler e imprimir.
+Seu programa também deve ter um TAD para representar toda a
+ biblioteca, contendo um vetor de livros e a quantidade de
+ livros já armazenados nessa TAD. O máximo de livros na TAD
+  biblioteca será 10. Seu TAD deve ter uma operação capaz de
+  ler um novo livro, uma operação para imprimir todos os livros
+   da biblioteca e outra operação capaz de imprimir o livro que
+contém o maior número de páginas de toda a biblioteca.*/
+
+#include<stdio.h>
+#include<string.h>
+
+struct livro
+{
+    char titulo[50];
+    char autor[50];
+    int Npaginas;
+
+
+
+};
+
+struct biblioteca
+{
+
+    livro l;
+
+    int qtd;
+
+    void ler()
+    {
+
+
+
+            fflush(stdin);
+            printf("\nNome:");
+            scanf("%[^\n]",l.titulo);
+            fflush(stdin);
+            printf("\nautor:");
+            scanf("%[^\n]",l.autor);
+
+            printf("\nNumero de paginas:");
+            scanf("%d",&l.Npaginas);
+
+            qtd++;
+
+        }
+
+
+
+
+    void imprimir()
+    {
+
+        printf("\ntitulo:%s  \nautor:%s  \nnumero de paginas:%d\n",l.titulo,  l.autor,  l.Npaginas);
+
+    }
+
+
+
+
+};
+
+
+
+
+int main()
+{
+
+    biblioteca b[10];
+    livro l;
+
+
+    int i;
+    int op;
+
+
+    do
+    {
+        printf("\n1.Ler");
+        printf("\n2.Imprimir");
+        printf("\n3.Maior\n");
+        scanf("\n%d",&op);
+
+        if(op==1)
+        {
+            for(i=0; i<10; i++)
+            {
+                b[i].ler();
+
+            }
+            // break;
+
+        }
+
+        if(op==2)
+        {
+            for(i=0; i<10; i++)
+            {
+                b[i].imprimir();
+
+
+            }
+        }
+
+        if(op==3)
+        {
+
+
+
+        }
+
+
+
+
+
+
+} while(op==1 || op==2 || op==3);
+
+
+
+
+ return 0;
+
+}
