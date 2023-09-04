@@ -1,1 +1,6 @@
-
+20230803_atividade_biblioteca.cpp
+Struct Livro
+Função ler: complexidade O(1)
+Função imprimir: complexidade O(1)
+Struct Biblioteca
+Função lerLivro: complexidade O(?)
