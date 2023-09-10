@@ -5,4 +5,36 @@ Função imprimir: complexidade O(1)
 Struct Biblioteca
 Função lerLivro: complexidade O(1)
 Função imprimirTodos: complexidade O(n)
-Função imprimirMaiorLivro:
+Função imprimirMaiorLivro:complexidade O(n)
+
+20230817_exercicio1.cpp
+Struct Data
+Função ler: complexidade O(1)
+Função imprimir: complexidade O(1)
+Função calcularIdade:complexidade O(1)
+struct Cliente
+Função ler: complexidade O(1)
+Função imprimir: complexidade O(1)
+
+20230817_exercicio2.cpp
+Struct Funcionario
+Função ler: complexidade O(1)
+Função imprimir: complexidade O(1)
+struct Loja
+Função Loja:complexidade O(1)
+Função ler: complexidade O(1)
+Função listarTodos:complexidade O(n)
+Função mediaSalarial:complexidade O(1)
+Função maiorSalario:complexidade O(1)
+
+20230817_exercicio3.cpp
+Função troca:complexidade O(1)
+Função bubbleSort:complexidade O(n^2)
+struct Conjunto
+Função Conjunto:complexidade O(1)
+Função ler: complexidade O(n)
+Função imprimir:complexidade O(n)
+Função uniao:complexidade O(c2.n)
+Função intersecao:complexidade O(n*c2.n)
+Função iguais:complexidade O(n)
+
